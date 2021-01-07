@@ -15,3 +15,9 @@
 *.aliases
 *.lvlps
 .cache/
+
+# Deplyoment binaries/files
+distribution/vipm/*.vip
+distribution/working/*
+source/data/bin/*.*
+source/lv-builder*.json
