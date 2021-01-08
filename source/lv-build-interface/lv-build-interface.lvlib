@@ -33,38 +33,40 @@
 	<Property Name="SaveStatePeriod" Type="UInt">0</Property>
 	<Property Name="Serialized ACL" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
-	<Item Name="_controls" Type="Folder">
-		<Item Name="action.ctl" Type="VI" URL="../_controls/action.ctl"/>
-		<Item Name="event_common.ctl" Type="VI" URL="../_controls/event_common.ctl"/>
-		<Item Name="event_common_command.ctl" Type="VI" URL="../_controls/event_common_command.ctl"/>
-		<Item Name="fg_commands.ctl" Type="VI" URL="../_controls/fg_commands.ctl"/>
-		<Item Name="hmi_references.ctl" Type="VI" URL="../_controls/hmi_references.ctl"/>
-		<Item Name="hmi_states.ctl" Type="VI" URL="../_controls/hmi_states.ctl"/>
-		<Item Name="navigation.ctl" Type="VI" URL="../_controls/navigation.ctl"/>
-		<Item Name="tab_control.ctl" Type="VI" URL="../_controls/tab_control.ctl"/>
-	</Item>
-	<Item Name="_globals" Type="Folder"/>
-	<Item Name="_subvis" Type="Folder">
-		<Item Name="hmi" Type="Folder">
-			<Item Name="hmi_cancel_enable.vi" Type="VI" URL="../_subvis/hmi/hmi_cancel_enable.vi"/>
-			<Item Name="hmi_initialize.vi" Type="VI" URL="../_subvis/hmi/hmi_initialize.vi"/>
-			<Item Name="hmi_load_project.vi" Type="VI" URL="../_subvis/hmi/hmi_load_project.vi"/>
-			<Item Name="hmi_negative_feedback.vi" Type="VI" URL="../_subvis/hmi/hmi_negative_feedback.vi"/>
-			<Item Name="hmi_progress.vi" Type="VI" URL="../_subvis/hmi/hmi_progress.vi"/>
-			<Item Name="hmi_reset_start_cancel.vi" Type="VI" URL="../_subvis/hmi/hmi_reset_start_cancel.vi"/>
-			<Item Name="hmi_shutdown.vi" Type="VI" URL="../_subvis/hmi/hmi_shutdown.vi"/>
-			<Item Name="hmi_start_enable.vi" Type="VI" URL="../_subvis/hmi/hmi_start_enable.vi"/>
-			<Item Name="hmi_status.vi" Type="VI" URL="../_subvis/hmi/hmi_status.vi"/>
+	<Item Name="private" Type="Folder">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		<Item Name="_controls" Type="Folder">
+			<Item Name="action.ctl" Type="VI" URL="../private/_controls/action.ctl"/>
+			<Item Name="event_common.ctl" Type="VI" URL="../private/_controls/event_common.ctl"/>
+			<Item Name="event_common_command.ctl" Type="VI" URL="../private/_controls/event_common_command.ctl"/>
+			<Item Name="fg_commands.ctl" Type="VI" URL="../private/_controls/fg_commands.ctl"/>
+			<Item Name="hmi_references.ctl" Type="VI" URL="../private/_controls/hmi_references.ctl"/>
+			<Item Name="hmi_states.ctl" Type="VI" URL="../private/_controls/hmi_states.ctl"/>
+			<Item Name="navigation.ctl" Type="VI" URL="../private/_controls/navigation.ctl"/>
+			<Item Name="tab_control.ctl" Type="VI" URL="../private/_controls/tab_control.ctl"/>
 		</Item>
-		<Item Name="utilities" Type="Folder">
-			<Item Name="util_generate_actions.vi" Type="VI" URL="../_subvis/utilities/util_generate_actions.vi"/>
+		<Item Name="_subvis" Type="Folder">
+			<Item Name="hmi" Type="Folder">
+				<Item Name="hmi_cancel_enable.vi" Type="VI" URL="../private/_subvis/hmi/hmi_cancel_enable.vi"/>
+				<Item Name="hmi_initialize.vi" Type="VI" URL="../private/_subvis/hmi/hmi_initialize.vi"/>
+				<Item Name="hmi_load_project.vi" Type="VI" URL="../private/_subvis/hmi/hmi_load_project.vi"/>
+				<Item Name="hmi_negative_feedback.vi" Type="VI" URL="../private/_subvis/hmi/hmi_negative_feedback.vi"/>
+				<Item Name="hmi_progress.vi" Type="VI" URL="../private/_subvis/hmi/hmi_progress.vi"/>
+				<Item Name="hmi_reset_start_cancel.vi" Type="VI" URL="../private/_subvis/hmi/hmi_reset_start_cancel.vi"/>
+				<Item Name="hmi_shutdown.vi" Type="VI" URL="../private/_subvis/hmi/hmi_shutdown.vi"/>
+				<Item Name="hmi_start_enable.vi" Type="VI" URL="../private/_subvis/hmi/hmi_start_enable.vi"/>
+				<Item Name="hmi_status.vi" Type="VI" URL="../private/_subvis/hmi/hmi_status.vi"/>
+			</Item>
+			<Item Name="utilities" Type="Folder">
+				<Item Name="util_generate_actions.vi" Type="VI" URL="../private/_subvis/utilities/util_generate_actions.vi"/>
+			</Item>
+			<Item Name="load_class.vi" Type="VI" URL="../private/_subvis/load_class.vi"/>
+			<Item Name="load_project.vi" Type="VI" URL="../private/_subvis/load_project.vi"/>
 		</Item>
-		<Item Name="load_class.vi" Type="VI" URL="../_subvis/load_class.vi"/>
-		<Item Name="load_project.vi" Type="VI" URL="../_subvis/load_project.vi"/>
-	</Item>
-	<Item Name="interfaces" Type="Folder">
-		<Item Name="interface_configure.vi" Type="VI" URL="../interfaces/interface_configure.vi"/>
-		<Item Name="interface_select_project.vi" Type="VI" URL="../interfaces/interface_select_project.vi"/>
+		<Item Name="interfaces" Type="Folder">
+			<Item Name="interface_configure.vi" Type="VI" URL="../private/interfaces/interface_configure.vi"/>
+			<Item Name="interface_select_project.vi" Type="VI" URL="../private/interfaces/interface_select_project.vi"/>
+		</Item>
 	</Item>
 	<Item Name="antonio-alexander Build.vi" Type="VI" URL="../antonio-alexander Build.vi"/>
 </Library>
