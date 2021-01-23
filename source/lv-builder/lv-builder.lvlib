@@ -15,10 +15,6 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		<Item Name="_controls" Type="Folder">
 			<Item Name="command_configuration.ctl" Type="VI" URL="../private/_controls/command_configuration.ctl"/>
-			<Item Name="post_action_application.ctl" Type="VI" URL="../private/_controls/post_action_application.ctl"/>
-			<Item Name="post_action_installer.ctl" Type="VI" URL="../private/_controls/post_action_installer.ctl"/>
-			<Item Name="post_action_lvlib.ctl" Type="VI" URL="../private/_controls/post_action_lvlib.ctl"/>
-			<Item Name="post_action_zip.ctl" Type="VI" URL="../private/_controls/post_action_zip.ctl"/>
 		</Item>
 		<Item Name="_globals" Type="Folder"/>
 		<Item Name="_subvis" Type="Folder">
@@ -40,6 +36,10 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 		<Item Name="_controls" Type="Folder">
 			<Item Name="configuration.ctl" Type="VI" URL="../public/_controls/configuration.ctl"/>
+			<Item Name="post_action_application.ctl" Type="VI" URL="../public/_controls/post_action_application.ctl"/>
+			<Item Name="post_action_installer.ctl" Type="VI" URL="../public/_controls/post_action_installer.ctl"/>
+			<Item Name="post_action_lvlib.ctl" Type="VI" URL="../public/_controls/post_action_lvlib.ctl"/>
+			<Item Name="post_action_zip.ctl" Type="VI" URL="../public/_controls/post_action_zip.ctl"/>
 		</Item>
 		<Item Name="_globals" Type="Folder"/>
 		<Item Name="_subvis" Type="Folder">
