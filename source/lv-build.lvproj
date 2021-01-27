@@ -26,8 +26,6 @@
 				<Item Name="lv-bin-7zip.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-bin-7zip/lv-bin-7zip.lvlib"/>
 				<Item Name="lv-bin.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-bin/lv-bin.lvlib"/>
 				<Item Name="lv-bin-git.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-bin-git/lv-bin-git.lvlib"/>
-				<Item Name="lv-builder.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-build/lv-builder/lv-builder.lvlib"/>
-				<Item Name="lv-build.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-build/lv-build/lv-build.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
