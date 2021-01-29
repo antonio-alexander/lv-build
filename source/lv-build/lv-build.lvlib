@@ -39,7 +39,6 @@
 			<Item Name="temp_dir_config.ctl" Type="VI" URL="../private/_controls/temp_dir_config.ctl"/>
 		</Item>
 		<Item Name="_globals" Type="Folder">
-			<Item Name="fg_path.vi" Type="VI" URL="../private/_globals/fg_path.vi"/>
 			<Item Name="fg_temp_dir-config.vi" Type="VI" URL="../private/_globals/fg_temp_dir-config.vi"/>
 		</Item>
 		<Item Name="_subvis" Type="Folder">

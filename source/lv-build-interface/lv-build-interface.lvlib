@@ -39,7 +39,6 @@
 			<Item Name="action.ctl" Type="VI" URL="../private/_controls/action.ctl"/>
 			<Item Name="event_common.ctl" Type="VI" URL="../private/_controls/event_common.ctl"/>
 			<Item Name="event_common_command.ctl" Type="VI" URL="../private/_controls/event_common_command.ctl"/>
-			<Item Name="fg_commands.ctl" Type="VI" URL="../private/_controls/fg_commands.ctl"/>
 			<Item Name="hmi_references.ctl" Type="VI" URL="../private/_controls/hmi_references.ctl"/>
 			<Item Name="hmi_states.ctl" Type="VI" URL="../private/_controls/hmi_states.ctl"/>
 			<Item Name="navigation.ctl" Type="VI" URL="../private/_controls/navigation.ctl"/>
@@ -60,6 +59,7 @@
 			<Item Name="utilities" Type="Folder">
 				<Item Name="util_generate_actions.vi" Type="VI" URL="../private/_subvis/utilities/util_generate_actions.vi"/>
 			</Item>
+			<Item Name="config_class.vi" Type="VI" URL="../private/_subvis/config_class.vi"/>
 			<Item Name="load_class.vi" Type="VI" URL="../private/_subvis/load_class.vi"/>
 			<Item Name="load_project.vi" Type="VI" URL="../private/_subvis/load_project.vi"/>
 		</Item>
