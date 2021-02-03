@@ -46,6 +46,7 @@
 		</Item>
 		<Item Name="_subvis" Type="Folder">
 			<Item Name="hmi" Type="Folder">
+				<Item Name="hmi_browse_builder_class.vi" Type="VI" URL="../private/_subvis/hmi/hmi_browse_builder_class.vi"/>
 				<Item Name="hmi_cancel_enable.vi" Type="VI" URL="../private/_subvis/hmi/hmi_cancel_enable.vi"/>
 				<Item Name="hmi_initialize.vi" Type="VI" URL="../private/_subvis/hmi/hmi_initialize.vi"/>
 				<Item Name="hmi_load_project.vi" Type="VI" URL="../private/_subvis/hmi/hmi_load_project.vi"/>
