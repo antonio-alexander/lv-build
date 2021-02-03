@@ -29,8 +29,9 @@
 				<Item Name="move_zip.vi" Type="VI" URL="../private/_subvis/post_actions/move_zip.vi"/>
 				<Item Name="zip_extract.vi" Type="VI" URL="../private/_subvis/post_actions/zip_extract.vi"/>
 			</Item>
-			<Item Name="configuration.vi" Type="VI" URL="../private/_subvis/configuration.vi"/>
+			<Item Name="get_config_path.vi" Type="VI" URL="../private/_subvis/get_config_path.vi"/>
 		</Item>
+		<Item Name="configuration.vi" Type="VI" URL="../private/configuration.vi"/>
 	</Item>
 	<Item Name="public" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
