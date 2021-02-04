@@ -11,6 +11,9 @@
 		<Item Name="cube_drop.vi" Type="VI" URL="../class/cube_drop.vi"/>
 		<Item Name="lv-builder-l3.lvclass" Type="LVClass" URL="../class/lv-builder-l3.lvclass"/>
 	</Item>
+	<Item Name="examples" Type="Folder">
+		<Item Name="example_01_build_interface.vi" Type="VI" URL="../examples/example_01_build_interface.vi"/>
+	</Item>
 	<Item Name="private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		<Item Name="_controls" Type="Folder">
@@ -20,9 +23,10 @@
 			<Item Name="fg_temp_dir_config.vi" Type="VI" URL="../private/_globals/fg_temp_dir_config.vi"/>
 		</Item>
 		<Item Name="_subvis" Type="Folder">
-			<Item Name="configuration.vi" Type="VI" URL="../private/_subvis/configuration.vi"/>
 			<Item Name="create_application.vi" Type="VI" URL="../private/_subvis/create_application.vi"/>
+			<Item Name="get_config_path.vi" Type="VI" URL="../private/_subvis/get_config_path.vi"/>
 		</Item>
+		<Item Name="configuration.vi" Type="VI" URL="../private/configuration.vi"/>
 	</Item>
 	<Item Name="public" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
