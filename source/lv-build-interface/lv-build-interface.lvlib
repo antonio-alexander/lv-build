@@ -57,15 +57,11 @@
 				<Item Name="hmi_start_enable.vi" Type="VI" URL="../private/_subvis/hmi/hmi_start_enable.vi"/>
 				<Item Name="hmi_status.vi" Type="VI" URL="../private/_subvis/hmi/hmi_status.vi"/>
 			</Item>
-			<Item Name="utilities" Type="Folder">
-				<Item Name="util_generate_actions.vi" Type="VI" URL="../private/_subvis/utilities/util_generate_actions.vi"/>
-			</Item>
-			<Item Name="config_class.vi" Type="VI" URL="../private/_subvis/config_class.vi"/>
+			<Item Name="generate_actions.vi" Type="VI" URL="../private/_subvis/generate_actions.vi"/>
 			<Item Name="load_class.vi" Type="VI" URL="../private/_subvis/load_class.vi"/>
 			<Item Name="load_project.vi" Type="VI" URL="../private/_subvis/load_project.vi"/>
 		</Item>
 		<Item Name="interfaces" Type="Folder">
-			<Item Name="interface_configure.vi" Type="VI" URL="../private/interfaces/interface_configure.vi"/>
 			<Item Name="interface_select_project.vi" Type="VI" URL="../private/interfaces/interface_select_project.vi"/>
 		</Item>
 	</Item>

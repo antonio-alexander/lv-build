@@ -35,19 +35,13 @@
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
 	<Item Name="private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-		<Item Name="_controls" Type="Folder">
-			<Item Name="temp_dir_config.ctl" Type="VI" URL="../private/_controls/temp_dir_config.ctl"/>
-		</Item>
-		<Item Name="_globals" Type="Folder">
-			<Item Name="fg_temp_dir-config.vi" Type="VI" URL="../private/_globals/fg_temp_dir-config.vi"/>
-		</Item>
+		<Item Name="_controls" Type="Folder"/>
+		<Item Name="_globals" Type="Folder"/>
 		<Item Name="_subvis" Type="Folder">
-			<Item Name="utilities" Type="Folder">
-				<Item Name="util_find_owners.vi" Type="VI" URL="../private/_subvis/utilities/util_find_owners.vi"/>
-				<Item Name="util_find_type.vi" Type="VI" URL="../private/_subvis/utilities/util_find_type.vi"/>
-				<Item Name="util_get_config_path.vi" Type="VI" URL="../private/_subvis/utilities/util_get_config_path.vi"/>
-				<Item Name="util_sort_build_specs.vi" Type="VI" URL="../private/_subvis/utilities/util_sort_build_specs.vi"/>
-			</Item>
+			<Item Name="find_owners.vi" Type="VI" URL="../private/_subvis/find_owners.vi"/>
+			<Item Name="find_type.vi" Type="VI" URL="../private/_subvis/find_type.vi"/>
+			<Item Name="get_config_path.vi" Type="VI" URL="../private/_subvis/get_config_path.vi"/>
+			<Item Name="sort_build_specs.vi" Type="VI" URL="../private/_subvis/sort_build_specs.vi"/>
 		</Item>
 	</Item>
 	<Item Name="public" Type="Folder">
@@ -61,11 +55,9 @@
 			<Item Name="utilities" Type="Folder">
 				<Item Name="util_file_create_read.vi" Type="VI" URL="../public/_subvis/utilities/util_file_create_read.vi"/>
 				<Item Name="util_file_write.vi" Type="VI" URL="../public/_subvis/utilities/util_file_write.vi"/>
-				<Item Name="util_generate_temp_folder.vi" Type="VI" URL="../public/_subvis/utilities/util_generate_temp_folder.vi"/>
 				<Item Name="util_tokenize_string.vi" Type="VI" URL="../public/_subvis/utilities/util_tokenize_string.vi"/>
 			</Item>
 			<Item Name="configuration.vi" Type="VI" URL="../public/_subvis/configuration.vi"/>
-			<Item Name="create_project_vipc.vi" Type="VI" URL="../public/_subvis/create_project_vipc.vi"/>
 			<Item Name="get_build_specs.vi" Type="VI" URL="../public/_subvis/get_build_specs.vi"/>
 		</Item>
 	</Item>
