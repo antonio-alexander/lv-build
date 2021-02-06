@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-06 01:50:41" Creator="noobius" Comments="" ID="0cc510ed631b8f2531daa859f3a65c9e">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-06 02:32:28" Creator="noobius" Comments="" ID="29fff24eb36796b911317fcadc494fb0">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_build</Package_File_Name>
-    <Library_Version>0.10.1.3</Library_Version>
+    <Library_Version>0.10.1.4</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\working\lv-build</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -252,7 +252,7 @@
         <Path>..\working\lv-build\lv-builder-l3</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E0159D2D5BD0F261D77A6596DBE92CE0</GUID>
+      <GUID>B3FC4E12FCC4BBD44BBA8868BF9B72F2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -287,7 +287,7 @@
         <Path>..\working\lv-build\lv-build-interface\interfaces</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B354A0FBCD210F424D3AFB0BF1F90D7B</GUID>
+      <GUID>90518D3C5356993FF5A92A9B26BE6883</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -350,7 +350,7 @@
         <Path>..\working\lv-build\lv-builder\public</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7296BC9D34B9812F8E1FDB59AA40FD07</GUID>
+      <GUID>730A15F700BBE2A195080960928AD85E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -399,7 +399,7 @@
         <Path>..\working\lv-build\lv-builder-l3\public</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F58219729843744485C6EC89B902886D</GUID>
+      <GUID>5F9D5D3AD9C20766536D4B5EC27C8059</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -434,7 +434,7 @@
         <Path>..\working\lv-build\lv-build-interface\private\interfaces\interface_select_project.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E03E48F9AC8594C8E4498C1F897ACB02</GUID>
+      <GUID>8D89D42402552965648402509F761E91</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -497,7 +497,7 @@
         <Path>..\working\lv-build\lv-builder\public\post.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>97E862F5CF5501DBE920513DE9BFBED1</GUID>
+      <GUID>0173446E68605F5E78E0EBE018E7B157</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -518,7 +518,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>lv-builder\private</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>E99BB356B14DBBEC9EF51A606A99E386</GUID>
+      <GUID>9156029246CCB5C0D16111085A658511</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -553,7 +553,7 @@
         <Path>..\working\lv-build\lv-builder\public\interfaces</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F0BE6053E4102BFD64429C854DEA0D19</GUID>
+      <GUID>84E0C07C63EAF95E5B8233A062F96643</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>5</Parent_Palette_Index>
@@ -644,7 +644,7 @@
         <Path>..\working\lv-build\lv-builder\public\accessors\version_write.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8A6AB0283493B919A1E6EF54BCFD7DC2</GUID>
+      <GUID>058368193B6C6C79CB483FA0604E274C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -665,7 +665,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>lv-builder\public\interfaces</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>C7741C3D549AF50FDD5EDD4259A3F7D8</GUID>
+      <GUID>1535004C569861178E7F640CB6D576D4</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -728,7 +728,7 @@
         <Path>..\working\lv-build\lv-builder\public\post.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D9A9026F96F1CDC860B749B87098D1A5</GUID>
+      <GUID>D44520601BD02CDB3FBEE95F5D60295B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -763,7 +763,7 @@
         <Path>..\working\lv-build\lv-builder-l3\public\interfaces</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>53E743F7DE793211ED5710BA57E8C029</GUID>
+      <GUID>35A803262C55EC4A9A5E85D31125CA7B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>10</Parent_Palette_Index>
@@ -812,7 +812,7 @@
         <Path>..\working\lv-build\lv-builder\public\accessors\project_file_write.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B1A377A7A149FFABE381721AFD9FA32C</GUID>
+      <GUID>02865DA40949C6CE038FA7ACF0B7C3ED</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>11</Parent_Palette_Index>
@@ -833,7 +833,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>lv-builder-l3\public\interfaces</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>4274A0D6BD367E709783D4BF7446695E</GUID>
+      <GUID>B390412F57B8F369F2F040502DE7DE6B</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -854,7 +854,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>..</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>AB3B866EA19242691765890366B954F2</GUID>
+      <GUID>BA8A374ED8DA248515AAE7EAF9DFF11D</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

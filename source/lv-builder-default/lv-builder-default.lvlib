@@ -15,7 +15,6 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">4</Property>
 		<Item Name="_controls" Type="Folder">
 			<Item Name="command_configuration.ctl" Type="VI" URL="../community/_controls/command_configuration.ctl"/>
-			<Item Name="configuration.ctl" Type="VI" URL="../community/_controls/configuration.ctl"/>
 		</Item>
 		<Item Name="_subvis" Type="Folder">
 			<Item Name="application_compress.vi" Type="VI" URL="../community/_subvis/application_compress.vi"/>
@@ -33,7 +32,6 @@
 			<Item Name="interface_configuration.vi" Type="VI" URL="../community/interfaces/interface_configuration.vi"/>
 		</Item>
 		<Item Name="configuration.vi" Type="VI" URL="../community/configuration.vi"/>
-		<Item Name="create_project_vipc.vi" Type="VI" URL="../community/create_project_vipc.vi"/>
 	</Item>
 	<Item Name="private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -49,6 +47,7 @@
 	<Item Name="public" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 		<Item Name="_controls" Type="Folder">
+			<Item Name="configuration.ctl" Type="VI" URL="../public/_controls/configuration.ctl"/>
 			<Item Name="post_action_application.ctl" Type="VI" URL="../public/_controls/post_action_application.ctl"/>
 			<Item Name="post_action_installer.ctl" Type="VI" URL="../public/_controls/post_action_installer.ctl"/>
 			<Item Name="post_action_lvlib.ctl" Type="VI" URL="../public/_controls/post_action_lvlib.ctl"/>
@@ -59,6 +58,7 @@
 			<Item Name="load_class.vi" Type="VI" URL="../public/_subvis/load_class.vi"/>
 			<Item Name="update_version.vi" Type="VI" URL="../public/_subvis/update_version.vi"/>
 		</Item>
+		<Item Name="create_project_vipc.vi" Type="VI" URL="../public/create_project_vipc.vi"/>
 		<Item Name="cube_drop.vi" Type="VI" URL="../public/cube_drop.vi"/>
 	</Item>
 </Library>
