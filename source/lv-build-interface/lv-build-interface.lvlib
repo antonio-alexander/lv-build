@@ -62,6 +62,7 @@
 			<Item Name="load_project.vi" Type="VI" URL="../private/_subvis/load_project.vi"/>
 		</Item>
 		<Item Name="interfaces" Type="Folder">
+			<Item Name="interface_select_class.vi" Type="VI" URL="../private/interfaces/interface_select_class.vi"/>
 			<Item Name="interface_select_project.vi" Type="VI" URL="../private/interfaces/interface_select_project.vi"/>
 		</Item>
 	</Item>
