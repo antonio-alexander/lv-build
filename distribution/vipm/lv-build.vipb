@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-07 19:30:49" Creator="noobius" Comments="" ID="3bdb68e67aa027a103e5f2ca40abf279">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-07 19:58:43" Creator="noobius" Comments="" ID="e4c7025e1d444411b0b255845b6b7015">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_build</Package_File_Name>
-    <Library_Version>0.10.1.11</Library_Version>
+    <Library_Version>0.10.1.12</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build</Library_Source_Folder>
     <Library_Output_Folder>F:\github.com\antonio-alexander\lv-build\distribution\vipm</Library_Output_Folder>
@@ -255,7 +255,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A82E0FF50946529534DD9EAAF18278AB</GUID>
+      <GUID>CD0A20F54DE78236F29AD2F84186036E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -304,7 +304,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build-interface\antonio-alexander Build.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5D4D112D442B5C6EC0B002BB370B1F58</GUID>
+      <GUID>6411321002140626CE2F025796FE439C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -339,7 +339,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BC02355A7B869D019B6CCD0B21D4B923</GUID>
+      <GUID>1A0C42D375B845DA0224C939486D44F5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -388,7 +388,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\public</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>36C3A066250C8E84B477B4AC0611EE91</GUID>
+      <GUID>950168DAC5E83ACBCE4195FC773A0131</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -423,7 +423,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build-interface\private\interfaces</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FF836418F5F7204549AE53E56A9CB8C1</GUID>
+      <GUID>0415A24F79C9CCF527F4639C11B1C454</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -472,7 +472,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build-interface\private\interfaces\interface_select_project.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D5E6A4B85F271C966A0ABFA4B54B6B09</GUID>
+      <GUID>E24CBE698F008A3DC295C5543870B279</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -619,7 +619,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\post.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2A89F324B87E511AE2CAD72EB3A87929</GUID>
+      <GUID>4AA22705C28AC63B918502D3CA48A84E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -640,20 +640,6 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>lv-builder\public\accessors</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>bin_folder_read.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\accessors\bin_folder_read.vi</Path>
-        <VI_Title/>
-      </Items_Data>
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
@@ -727,20 +713,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>dependencies_folder_read.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\accessors\dependencies_folder_read.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>dependencies_folder_write.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -764,20 +736,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\accessors\distribution_folder_read.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>distribution_folder_write.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\accessors\distribution_folder_write.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -836,7 +794,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\accessors\version_write.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EA382543A8F336C52A6B3E81E0BC5282</GUID>
+      <GUID>DB5F5686A37FB3AE853E31D80576D782</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -885,7 +843,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\community\configuration.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>02414DE530DBD2A82176C6CDF437093B</GUID>
+      <GUID>0015C8BD779BD00C4F112A4FF81623E0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1032,7 +990,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\public\post.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6380BAB1B46893E91F60907F6E19B68B</GUID>
+      <GUID>C0A3891AF42F9B444EE06FF3B97B0A99</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>8</Parent_Palette_Index>
@@ -1067,7 +1025,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\community\interfaces\interface_configuration.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3BFC3D87834E2B14B2D5969BFDCC460B</GUID>
+      <GUID>0EBA92B8450791EB02558F8129856B87</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -1144,7 +1102,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\public\accessors\version_write.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EF247A3C7644C79D617A4B2A5E8BE353</GUID>
+      <GUID>1E756D442F7EA11094391B62A0AB25B8</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -1165,7 +1123,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>..</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>FC71AA3B991E1D676ED359B4033CA3EB</GUID>
+      <GUID>F4A9EE9257472C33B373C162AB2121F8</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
