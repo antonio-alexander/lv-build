@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Re-factored the classes so that there was an empty class with the prototypes at the highest level and then a "default" class would inherit from that class to override. Also moved all the configuration to the class rather than spreading it across lv-build and the injected class.
 - Modified initialize.vi method to also include the project_file to simplify expected functionality
 - Added function to find all builder classes in a given folder (or user.lib if none given). Added an interface to be able to select the class as well. Broke the api for load_class.
+- Added commit method to separate writing the configuration from performing the configuration (and launching the configure interface) to simplify composition when an overriding class wants to use some of the ancestor effort (e.g. its interface, but not its configuration method).
 	
 ## [0.9.2] - 2021-01-09
 

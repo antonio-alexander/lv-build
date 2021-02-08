@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-07 01:27:59" Creator="noobius" Comments="" ID="0c4d7026f7a8aedc327786b2a4b86765">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-07 19:30:49" Creator="noobius" Comments="" ID="3bdb68e67aa027a103e5f2ca40abf279">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_build</Package_File_Name>
-    <Library_Version>0.10.1.8</Library_Version>
+    <Library_Version>0.10.1.11</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build</Library_Source_Folder>
     <Library_Output_Folder>F:\github.com\antonio-alexander\lv-build\distribution\vipm</Library_Output_Folder>
@@ -41,7 +41,9 @@
 - Re-worked all of the configuration (for json) to work with the project path as an index rather than to expect a single project per folder, this is a breaking change so incremented the minor number (although the major is still 0)
 - Re-factored the classes so that there was an empty class with the prototypes at the highest level and then a "default" class would inherit from that class to override. Also moved all the configuration to the class rather than spreading it across lv-build and the injected class.
 - Modified initialize.vi method to also include the project_file to simplify expected functionality
-- Added function to find all builder classes in a given folder (or user.lib if none given). Added an interface to be able to select the class as well. Broke the api for load_class.</Release_Notes>
+- Added function to find all builder classes in a given folder (or user.lib if none given). Added an interface to be able to select the class as well. Broke the api for load_class.
+- Added commit method to separate writing the configuration from performing the configuration (and launching the configure interface) to simplify composition when an overriding class wants to use some of the ancestor effort (e.g. its interface, but not its configuration method).
+- Had a rough problem trying to figure out how to re-use existing class implementations and decided that anyone attempting to do so should do so via composition rather than inheritance since the methods would have to be significantly more spread out and organized.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -253,7 +255,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4959811F5E5735D101FDF2C3B3BCAF58</GUID>
+      <GUID>A82E0FF50946529534DD9EAAF18278AB</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -302,7 +304,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build-interface\antonio-alexander Build.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7F6F1F2CFB36ABE0C988C33DF1AA6C32</GUID>
+      <GUID>5D4D112D442B5C6EC0B002BB370B1F58</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -337,7 +339,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4063AC73A27EC57D177BFD3C6D81A62C</GUID>
+      <GUID>BC02355A7B869D019B6CCD0B21D4B923</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -386,7 +388,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\public</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CF3C9B2B0D8D11B1145D2E58E7E616B9</GUID>
+      <GUID>36C3A066250C8E84B477B4AC0611EE91</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -421,7 +423,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build-interface\private\interfaces</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CBC8BF044E06CD454E79D4A48A4C14E3</GUID>
+      <GUID>FF836418F5F7204549AE53E56A9CB8C1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -470,7 +472,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build-interface\private\interfaces\interface_select_project.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FDEE77398B0ED6BF555FB9AC7A2B69B7</GUID>
+      <GUID>D5E6A4B85F271C966A0ABFA4B54B6B09</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -617,7 +619,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\post.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D85B1BA751ED979DFCBE997FFC7650EE</GUID>
+      <GUID>2A89F324B87E511AE2CAD72EB3A87929</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -834,7 +836,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\accessors\version_write.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>ED6038B80F26E7E61788310FB53AC141</GUID>
+      <GUID>EA382543A8F336C52A6B3E81E0BC5282</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -883,7 +885,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\community\configuration.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CBEFA9112FABBEB4E0419D49797775C4</GUID>
+      <GUID>02414DE530DBD2A82176C6CDF437093B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1030,7 +1032,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\public\post.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9C94246D0DF42C271BF4F989BB83AECD</GUID>
+      <GUID>6380BAB1B46893E91F60907F6E19B68B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>8</Parent_Palette_Index>
@@ -1065,7 +1067,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\community\interfaces\interface_configuration.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A137B9F7774429D1A0A0D0959EC8A92A</GUID>
+      <GUID>3BFC3D87834E2B14B2D5969BFDCC460B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -1142,7 +1144,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\public\accessors\version_write.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F0FBD1A049BB828BABD9EAD1031EE751</GUID>
+      <GUID>EF247A3C7644C79D617A4B2A5E8BE353</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -1163,7 +1165,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>..</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>8086FE0F9108BF57D5B7BDD7B2986F32</GUID>
+      <GUID>FC71AA3B991E1D676ED359B4033CA3EB</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
