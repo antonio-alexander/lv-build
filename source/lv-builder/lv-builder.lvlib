@@ -8,6 +8,7 @@
 
 </Property>
 	<Item Name="public" Type="Folder">
+		<Item Name="cube_drop.vi" Type="VI" URL="../public/cube_drop.vi"/>
 		<Item Name="find_builders.vi" Type="VI" URL="../public/find_builders.vi"/>
 		<Item Name="load_class.vi" Type="VI" URL="../public/load_class.vi"/>
 	</Item>
