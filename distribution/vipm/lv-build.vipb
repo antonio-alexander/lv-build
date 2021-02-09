@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-07 19:58:43" Creator="noobius" Comments="" ID="e4c7025e1d444411b0b255845b6b7015">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-08 15:23:36" Creator="noobius" Comments="" ID="46eaab5f13c5f0c8694bbc2bdaa0585c">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_build</Package_File_Name>
-    <Library_Version>0.10.1.12</Library_Version>
+    <Library_Version>1.0.0.1</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build</Library_Source_Folder>
     <Library_Output_Folder>F:\github.com\antonio-alexander\lv-build\distribution\vipm</Library_Output_Folder>
@@ -36,14 +36,7 @@
       <Copyright/>
       <Packager>Antonio Alexander</Packager>
       <URL>https://github.com/antonio-alexander/lv-distribution-build</URL>
-      <Release_Notes>- Separated the lv-builder-l3 from the lv-build project
-- Moved lv-builder-l3 to a separate repo [http://github.com/antonio-alexander/lv-builder-l3](http://github.com/antonio-alexander/lv-builder-l3)
-- Re-worked all of the configuration (for json) to work with the project path as an index rather than to expect a single project per folder, this is a breaking change so incremented the minor number (although the major is still 0)
-- Re-factored the classes so that there was an empty class with the prototypes at the highest level and then a "default" class would inherit from that class to override. Also moved all the configuration to the class rather than spreading it across lv-build and the injected class.
-- Modified initialize.vi method to also include the project_file to simplify expected functionality
-- Added function to find all builder classes in a given folder (or user.lib if none given). Added an interface to be able to select the class as well. Broke the api for load_class.
-- Added commit method to separate writing the configuration from performing the configuration (and launching the configure interface) to simplify composition when an overriding class wants to use some of the ancestor effort (e.g. its interface, but not its configuration method).
-- Had a rough problem trying to figure out how to re-use existing class implementations and decided that anyone attempting to do so should do so via composition rather than inheritance since the methods would have to be significantly more spread out and organized.</Release_Notes>
+      <Release_Notes/>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -255,7 +248,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CD0A20F54DE78236F29AD2F84186036E</GUID>
+      <GUID>1D9E21EAC7EEC6E7546D344E8E64AA99</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -304,7 +297,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build-interface\antonio-alexander Build.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6411321002140626CE2F025796FE439C</GUID>
+      <GUID>5161D89D2387E80150F5ABFC955AF4CE</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -339,7 +332,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1A0C42D375B845DA0224C939486D44F5</GUID>
+      <GUID>773A1CED9CD35C76CDC314937027405C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -388,7 +381,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\public</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>950168DAC5E83ACBCE4195FC773A0131</GUID>
+      <GUID>B9C5CBFDF5BACCA7986B552D6F7E9C1B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -423,7 +416,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build-interface\private\interfaces</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0415A24F79C9CCF527F4639C11B1C454</GUID>
+      <GUID>6A42D48FE871DC341328B11A8E25370E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -472,7 +465,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build-interface\private\interfaces\interface_select_project.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E24CBE698F008A3DC295C5543870B279</GUID>
+      <GUID>8A2538F8E53386F13403E6F0F64C9B41</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -619,7 +612,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\post.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4AA22705C28AC63B918502D3CA48A84E</GUID>
+      <GUID>C0C5D7BFE4FA525AE2AAF72CC57B69D1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -640,20 +633,6 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>lv-builder\public\accessors</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>bin_folder_write.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\accessors\bin_folder_write.vi</Path>
-        <VI_Title/>
-      </Items_Data>
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
@@ -708,20 +687,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\accessors\configuration_write.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>dependencies_folder_write.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\accessors\dependencies_folder_write.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -794,7 +759,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\accessors\version_write.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>DB5F5686A37FB3AE853E31D80576D782</GUID>
+      <GUID>8E50D47372198FF2EA3BA3ACD4AF6A81</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -843,7 +808,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\community\configuration.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0015C8BD779BD00C4F112A4FF81623E0</GUID>
+      <GUID>BA54E73F8B1F9B92A50603FF2FD852BD</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -990,7 +955,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\public\post.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C0A3891AF42F9B444EE06FF3B97B0A99</GUID>
+      <GUID>BA69BF732F19E9A4EEA8C62F921F2EA0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>8</Parent_Palette_Index>
@@ -1025,7 +990,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\community\interfaces\interface_configuration.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0EBA92B8450791EB02558F8129856B87</GUID>
+      <GUID>EC84C328B4E31E617F434C731B48DBA2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -1102,7 +1067,7 @@
         <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\public\accessors\version_write.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1E756D442F7EA11094391B62A0AB25B8</GUID>
+      <GUID>FE14F9627482348D33308EEBC71E62F2</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -1123,7 +1088,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>..</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>F4A9EE9257472C33B373C162AB2121F8</GUID>
+      <GUID>707EB12B151BCAB02208BA0FB309A5F5</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

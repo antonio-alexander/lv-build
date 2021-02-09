@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2021-02-08
+
+- This is the release candidate, will clean up source and provide documentation
+
 ## [0.10.1] - 2021-02-02
 
 - Separated the lv-builder-l3 from the lv-build project
@@ -14,7 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Modified initialize.vi method to also include the project_file to simplify expected functionality
 - Added function to find all builder classes in a given folder (or user.lib if none given). Added an interface to be able to select the class as well. Broke the api for load_class.
 - Added commit method to separate writing the configuration from performing the configuration (and launching the configure interface) to simplify composition when an overriding class wants to use some of the ancestor effort (e.g. its interface, but not its configuration method).
-	
+- Had a rough problem trying to figure out how to re-use existing class implementations and decided that anyone attempting to do so should do so via composition rather than inheritance since the methods would have to be significantly more spread out and organized.
+
 ## [0.9.2] - 2021-01-09
 
 - Fixed bug(s) where the actions wouldn't execute in the right order
