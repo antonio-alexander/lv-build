@@ -1,10 +1,10 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-08 23:18:55" Creator="noobius" Comments="" ID="78c876f479f9fd23bb2d6a1223e04f93">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-18 23:22:11" Creator="noobius" Comments="" ID="46f1a7311fa60f424b9a3a1a7142cba9">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_build</Package_File_Name>
-    <Library_Version>1.0.0.2</Library_Version>
+    <Library_Version>1.0.0.4</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
-    <Library_Source_Folder>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build</Library_Source_Folder>
-    <Library_Output_Folder>F:\github.com\antonio-alexander\lv-build\distribution\vipm</Library_Output_Folder>
+    <Library_Source_Folder>..\working\lv-build</Library_Source_Folder>
+    <Library_Output_Folder>.</Library_Output_Folder>
     <Company_Name>antonio-alexander</Company_Name>
     <Library_Summary/>
     <Library_License>MIT</Library_License>
@@ -37,7 +37,8 @@
       <Packager>Antonio Alexander</Packager>
       <URL>https://github.com/antonio-alexander/lv-distribution-build</URL>
       <Release_Notes>- This is the release candidate, will clean up source and provide documentation
-- Removed implementations for rt builds from lv-builder-default to simplify the implementation. That's a really weird rabbit hole left solved by another class/implementation.</Release_Notes>
+- Removed implementations for rt builds from lv-builder-default to simplify the implementation. That's a really weird rabbit hole left solved by another class/implementation.
+- Modified "update_version.vi" such that it would also update the time (leveraged some type checking to ensure the underlying variant types matched).</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -218,7 +219,7 @@
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build\public\get_build_specs.vi</Path>
+        <Path>..\working\lv-build\lv-build\public\get_build_specs.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -232,7 +233,7 @@
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build\public\configuration.vi</Path>
+        <Path>..\working\lv-build\lv-build\public\configuration.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -246,7 +247,7 @@
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build\public\_controls\build_specification.ctl</Path>
+        <Path>..\working\lv-build\lv-build\public\_controls\build_specification.ctl</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -260,7 +261,7 @@
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build\public\_controls\configuration_command.ctl</Path>
+        <Path>..\working\lv-build\lv-build\public\_controls\configuration_command.ctl</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -274,7 +275,7 @@
           <Column>4</Column>
         </Position>
         <Icon>00000CA0002800000C9A00000400000000000020002000080000000000FFFFFF00FF80000000FFFFFFFFFFFF0000FFFFFFFFCCCC0000FFFFFFFF99990000FFFFFFFF66660000FFFFFFFF33330000FFFFFFFF00000000FFFFCCCCFFFF0000FFFFCCCCCCCC0000FFFFCCCC99990000FFFFCCCC66660000FFFFCCCC33330000FFFFCCCC00000000FFFF9999FFFF0000FFFF9999CCCC0000FFFF999999990000FFFF999966660000FFFF999933330000FFFF999900000000FFFF6666FFFF0000FFFF6666CCCC0000FFFF666699990000FFFF666666660000FFFF666633330000FFFF666600000000FFFF3333FFFF0000FFFF3333CCCC0000FFFF333399990000FFFF333366660000FFFF333333330000FFFF333300000000FFFF0000FFFF0000FFFF0000CCCC0000FFFF000099990000FFFF000066660000FFFF000033330000FFFF000000000000CCCCFFFFFFFF0000CCCCFFFFCCCC0000CCCCFFFF99990000CCCCFFFF66660000CCCCFFFF33330000CCCCFFFF00000000CCCCCCCCFFFF0000CCCCCCCCCCCC0000CCCCCCCC99990000CCCCCCCC66660000CCCCCCCC33330000CCCCCCCC00000000CCCC9999FFFF0000CCCC9999CCCC0000CCCC999999990000CCCC999966660000CCCC999933330000CCCC999900000000CCCC6666FFFF0000CCCC6666CCCC0000CCCC666699990000CCCC666666660000CCCC666633330000CCCC666600000000CCCC3333FFFF0000CCCC3333CCCC0000CCCC333399990000CCCC333366660000CCCC333333330000CCCC333300000000CCCC0000FFFF0000CCCC0000CCCC0000CCCC000099990000CCCC000066660000CCCC000033330000CCCC0000000000009999FFFFFFFF00009999FFFFCCCC00009999FFFF999900009999FFFF666600009999FFFF333300009999FFFF000000009999CCCCFFFF00009999CCCCCCCC00009999CCCC999900009999CCCC666600009999CCCC333300009999CCCC0000000099999999FFFF000099999999CCCC0000999999999999000099999999666600009999999933330000999999990000000099996666FFFF000099996666CCCC0000999966669999000099996666666600009999666633330000999966660000000099993333FFFF000099993333CCCC0000999933339999000099993333666600009999333333330000999933330000000099990000FFFF000099990000CCCC000099990000999900009999000066660000999900003333000099990000000000006666FFFFFFFF00006666FFFFCCCC00006666FFFF999900006666FFFF666600006666FFFF333300006666FFFF000000006666CCCCFFFF00006666CCCCCCCC00006666CCCC999900006666CCCC666600006666CCCC333300006666CCCC0000000066669999FFFF000066669999CCCC0000666699999999000066669999666600006666999933330000666699990000000066666666FFFF000066666666CCCC0000666666669999000066666666666600006666666633330000666666660000000066663333FFFF000066663333CCCC0000666633339999000066663333666600006666333333330000666633330000000066660000FFFF000066660000CCCC000066660000999900006666000066660000666600003333000066660000000000003333FFFFFFFF00003333FFFFCCCC00003333FFFF999900003333FFFF666600003333FFFF333300003333FFFF000000003333CCCCFFFF00003333CCCCCCCC00003333CCCC999900003333CCCC666600003333CCCC333300003333CCCC0000000033339999FFFF000033339999CCCC0000333399999999000033339999666600003333999933330000333399990000000033336666FFFF000033336666CCCC0000333366669999000033336666666600003333666633330000333366660000000033333333FFFF000033333333CCCC0000333333339999000033333333666600003333333333330000333333330000000033330000FFFF000033330000CCCC000033330000999900003333000066660000333300003333000033330000000000000000FFFFFFFF00000000FFFFCCCC00000000FFFF999900000000FFFF666600000000FFFF333300000000FFFF000000000000CCCCFFFF00000000CCCCCCCC00000000CCCC999900000000CCCC666600000000CCCC333300000000CCCC0000000000009999FFFF000000009999CCCC0000000099999999000000009999666600000000999933330000000099990000000000006666FFFF000000006666CCCC0000000066669999000000006666666600000000666633330000000066660000000000003333FFFF000000003333CCCC0000000033339999000000003333666600000000333333330000000033330000000000000000FFFF000000000000CCCC0000000000009999000000000000666600000000000033330000EEEE000000000000DDDD000000000000BBBB000000000000AAAA0000000000008888000000000000777700000000000055550000000000004444000000000000222200000000000011110000000000000000EEEE000000000000DDDD000000000000BBBB000000000000AAAA0000000000008888000000000000777700000000000055550000000000004444000000000000222200000000000011110000000000000000EEEE000000000000DDDD000000000000BBBB000000000000AAAA0000000000008888000000000000777700000000000055550000000000004444000000000000222200000000000011110000EEEEEEEEEEEE0000DDDDDDDDDDDD0000BBBBBBBBBBBB0000AAAAAAAAAAAA0000888888888888000077777777777700005555555555550000444444444444000022222222222200001111111111110000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF787878787878787878787878787878787878787878787878787878787878FFFF787800000078780078780078007800787878000000787800000078787878FFFF787800787800780078780078007800787878007878007800787800787878FFFF787800000078780078780078007800787878007878007800000078787878FFFF787800787800780078780078007800787878007878007800787800787878FFFF787800000078787800007878007800000078000000787800787800787878FFFF787878787878787878787878787878787878787878787878787878787878FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFF000000000000000000000000000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public</Path>
+        <Path>..\working\lv-build\lv-builder\public</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -288,10 +289,10 @@
           <Column>4</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build-interface\antonio-alexander Build.vi</Path>
+        <Path>..\working\lv-build\lv-build-interface\antonio-alexander Build.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8C8E7E5A50CC6D07ECB775A5FB8539D8</GUID>
+      <GUID>00BEE2FD53EE4E2B76034E337D534848</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -323,7 +324,7 @@
           <Column>4</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\public\cube_drop.vi</Path>
+        <Path>..\working\lv-build\lv-builder-default\public\cube_drop.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -337,7 +338,7 @@
           <Column>4</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\public\cube_drop.vi</Path>
+        <Path>..\working\lv-build\lv-builder-default\public\cube_drop.vi</Path>
         <VI_Title>lv-builder</VI_Title>
       </Items_Data>
       <Items_Data>
@@ -351,7 +352,7 @@
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\initialize.vi</Path>
+        <Path>..\working\lv-build\lv-builder\public\initialize.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -365,7 +366,7 @@
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\configure.vi</Path>
+        <Path>..\working\lv-build\lv-builder\public\configure.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -379,7 +380,7 @@
           <Column>3</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\commit.vi</Path>
+        <Path>..\working\lv-build\lv-builder\public\commit.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -393,7 +394,7 @@
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\build.vi</Path>
+        <Path>..\working\lv-build\lv-builder\public\build.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -407,7 +408,7 @@
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\post.vi</Path>
+        <Path>..\working\lv-build\lv-builder\public\post.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -421,7 +422,7 @@
           <Column>3</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\deploy.vi</Path>
+        <Path>..\working\lv-build\lv-builder\public\deploy.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -435,7 +436,7 @@
           <Column>4</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\dependencies.vi</Path>
+        <Path>..\working\lv-build\lv-builder\public\dependencies.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -449,7 +450,7 @@
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\load_class.vi</Path>
+        <Path>..\working\lv-build\lv-builder\public\load_class.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -463,10 +464,10 @@
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder\public\find_builders.vi</Path>
+        <Path>..\working\lv-build\lv-builder\public\find_builders.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FA06A6586659A45AA92C9B6E17C7F9F1</GUID>
+      <GUID>B35FEB99832B09EC5ED5916A71ADF4DB</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -498,7 +499,7 @@
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-build\public\_controls\configuration.ctl</Path>
+        <Path>..\working\lv-build\lv-build\public\_controls\configuration.ctl</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -512,10 +513,10 @@
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>F:\github.com\antonio-alexander\lv-build\distribution\working\lv-build\lv-builder-default\public\_controls\configuration.ctl</Path>
+        <Path>..\working\lv-build\lv-builder-default\public\_controls\configuration.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4694F736DFABFBF483888976E9EA6D10</GUID>
+      <GUID>F2919D50511AB727560B8DBA99475698</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

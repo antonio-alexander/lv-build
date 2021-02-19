@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - This is the release candidate, will clean up source and provide documentation
 - Removed implementations for rt builds from lv-builder-default to simplify the implementation. That's a really weird rabbit hole left solved by another class/implementation.
+- Modified "update_version.vi" such that it would also update the time (leveraged some type checking to ensure the underlying variant types matched).
 
 ## [0.10.1] - 2021-02-02
 
