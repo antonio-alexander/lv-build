@@ -26,7 +26,7 @@
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="lv-bin-7zip.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-bin-7zip/lv-bin-7zip.lvlib"/>
 				<Item Name="lv-bin-git.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-bin-git/lv-bin-git.lvlib"/>
-				<Item Name="lv-bin.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-bin/lv-bin.lvlib"/>
+				<Item Name="lv-bin.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-bin/lv-bin/lv-bin.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D Array to String__ogtk497EDDB02AA4B404E9F3AB1BAA994342.vi" Type="VI" URL="/&lt;vilib&gt;/JKI/_VIPM API_internal_deps/1D Array to String__ogtk497EDDB02AA4B404E9F3AB1BAA994342.vi"/>

@@ -18,6 +18,7 @@
 
 # Deplyoment binaries/files
 distribution/vipm/*.vip
+distribution/archive/*.vip
 distribution/working/*
 source/data/bin/*.*
 source/lv-builder*.json

@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-18 23:22:11" Creator="noobius" Comments="" ID="46f1a7311fa60f424b9a3a1a7142cba9">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-20 18:37:13" Creator="noobius" Comments="" ID="efd02f8b026d38ee73d6b29deb1379ee">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_build</Package_File_Name>
-    <Library_Version>1.0.0.4</Library_Version>
+    <Library_Version>1.0.0.5</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\working\lv-build</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -17,9 +17,9 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <Additional_External_Dependencies>antonio_alexander_lib_lv_bin &gt;=1.0.0.4</Additional_External_Dependencies>
-      <Additional_External_Dependencies>antonio_alexander_lib_lv_bin_7zip &gt;=1.0.0.3</Additional_External_Dependencies>
-      <Additional_External_Dependencies>antonio_alexander_lib_lv_bin_git &gt;=0.9.0.2</Additional_External_Dependencies>
+      <Additional_External_Dependencies>antonio_alexander_lib_lv_bin &gt;=1.1.0.10</Additional_External_Dependencies>
+      <Additional_External_Dependencies>antonio_alexander_lib_lv_bin_7zip &gt;=1.1.0.5</Additional_External_Dependencies>
+      <Additional_External_Dependencies>antonio_alexander_lib_lv_bin_git &gt;=1.0.0.1</Additional_External_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
@@ -32,10 +32,10 @@
     <VI_Package_Configuration_File>lv-build.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary>lv-distribution-build is a library that provides functionality to simplify deployment/distribution of LabVIEW build artifacts such as instllers, zip files, libraries and even RT/FPGA applications.</One_Line_Description_Summary>
-      <Description>lv-distribution-build is a library that provides functionality to simplify deployment/distribution of LabVIEW build artifacts such as instllers, zip files and libraries.</Description>
+      <Description>lv-build is a library that provides functionality to simplify and automate deployment/distribution of LabVIEW build artifacts such as instllers, zip files and libraries. It also includes one fleshed out lv-builder class (lv-builder-default) that provide the backend functionality for the "antonio-alexander build&amp;#46;vi" interface/application (via tools &gt; "antonio-alexander build").</Description>
       <Copyright/>
       <Packager>Antonio Alexander</Packager>
-      <URL>https://github.com/antonio-alexander/lv-distribution-build</URL>
+      <URL>https://github.com/antonio-alexander/lv-build</URL>
       <Release_Notes>- This is the release candidate, will clean up source and provide documentation
 - Removed implementations for rt builds from lv-builder-default to simplify the implementation. That's a really weird rabbit hole left solved by another class/implementation.
 - Modified "update_version.vi" such that it would also update the time (leveraged some type checking to ensure the underlying variant types matched).</Release_Notes>
@@ -292,7 +292,7 @@
         <Path>..\working\lv-build\lv-build-interface\antonio-alexander Build.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>00BEE2FD53EE4E2B76034E337D534848</GUID>
+      <GUID>4192584AF887864A4FC63EF6EF115764</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -467,7 +467,7 @@
         <Path>..\working\lv-build\lv-builder\public\find_builders.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B35FEB99832B09EC5ED5916A71ADF4DB</GUID>
+      <GUID>F489060FC9FF20D25DA6977CB894C0ED</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -516,7 +516,7 @@
         <Path>..\working\lv-build\lv-builder-default\public\_controls\configuration.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F2919D50511AB727560B8DBA99475698</GUID>
+      <GUID>35C0E64CFC20F968E9347554CF5DEEC5</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
