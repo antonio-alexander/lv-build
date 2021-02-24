@@ -5,9 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.1] - 2021-02-23
+## [1.1.0] - 2021-02-23
 
 - Fixed bug where version would use the commit hash value as a delimiter when trying to split the version via dots.
+- Fixed bug (again) where installer build path/artifact was incorrect. 
+- Found that when the deploy method runs, it has no ability to deploy the artifact from the post operation, As a result, I created a new method for the lv-builder called "post_artifacts" that would loop through the build specs and populate the appropriate post artifacts where it mattered.
 
 ## [1.0.0] - 2021-02-08
 
