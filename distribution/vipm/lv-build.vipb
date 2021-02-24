@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-20 18:37:13" Creator="noobius" Comments="" ID="efd02f8b026d38ee73d6b29deb1379ee">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-07-07 23:53:16" Modified_Date="2021-02-23 19:01:10" Creator="noobius" Comments="" ID="ca73914dcd36abbb8c46aa4975bb7d46">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_build</Package_File_Name>
-    <Library_Version>1.0.0.5</Library_Version>
+    <Library_Version>1.0.1.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\working\lv-build</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -36,9 +36,7 @@
       <Copyright/>
       <Packager>Antonio Alexander</Packager>
       <URL>https://github.com/antonio-alexander/lv-build</URL>
-      <Release_Notes>- This is the release candidate, will clean up source and provide documentation
-- Removed implementations for rt builds from lv-builder-default to simplify the implementation. That's a really weird rabbit hole left solved by another class/implementation.
-- Modified "update_version.vi" such that it would also update the time (leveraged some type checking to ensure the underlying variant types matched).</Release_Notes>
+      <Release_Notes>- Fixed bug where version would use the commit hash value as a delimiter when trying to split the version via dots.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -292,7 +290,7 @@
         <Path>..\working\lv-build\lv-build-interface\antonio-alexander Build.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4192584AF887864A4FC63EF6EF115764</GUID>
+      <GUID>EC6CB6AF621BBFF4FBCAD39CDA3C89D8</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -467,7 +465,7 @@
         <Path>..\working\lv-build\lv-builder\public\find_builders.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F489060FC9FF20D25DA6977CB894C0ED</GUID>
+      <GUID>010144720A0BBD48DA4242138DF741F9</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -516,7 +514,7 @@
         <Path>..\working\lv-build\lv-builder-default\public\_controls\configuration.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>35C0E64CFC20F968E9347554CF5DEEC5</GUID>
+      <GUID>F0D1B45AAAF963ABD18362755FF48929</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
