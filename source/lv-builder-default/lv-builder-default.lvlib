@@ -15,11 +15,11 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">4</Property>
 		<Item Name="_controls" Type="Folder">
 			<Item Name="command_configuration.ctl" Type="VI" URL="../community/_controls/command_configuration.ctl"/>
+			<Item Name="version_command.ctl" Type="VI" URL="../community/_controls/version_command.ctl"/>
 		</Item>
 		<Item Name="_subvis" Type="Folder">
 			<Item Name="application_compress.vi" Type="VI" URL="../community/_subvis/application_compress.vi"/>
 			<Item Name="application_compress_path.vi" Type="VI" URL="../community/_subvis/application_compress_path.vi"/>
-			<Item Name="get_config_path.vi" Type="VI" URL="../community/_subvis/get_config_path.vi"/>
 			<Item Name="installer_compress.vi" Type="VI" URL="../community/_subvis/installer_compress.vi"/>
 			<Item Name="installer_compress_path.vi" Type="VI" URL="../community/_subvis/installer_compress_path.vi"/>
 			<Item Name="installer_create.vi" Type="VI" URL="../community/_subvis/installer_create.vi"/>
@@ -30,12 +30,16 @@
 			<Item Name="lvlib_copy.vi" Type="VI" URL="../community/_subvis/lvlib_copy.vi"/>
 			<Item Name="lvlibp_install.vi" Type="VI" URL="../community/_subvis/lvlibp_install.vi"/>
 			<Item Name="move_zip.vi" Type="VI" URL="../community/_subvis/move_zip.vi"/>
+			<Item Name="move_zip_path.vi" Type="VI" URL="../community/_subvis/move_zip_path.vi"/>
+			<Item Name="version_to_string.vi" Type="VI" URL="../community/_subvis/version_to_string.vi"/>
 			<Item Name="zip_extract.vi" Type="VI" URL="../community/_subvis/zip_extract.vi"/>
 		</Item>
 		<Item Name="interfaces" Type="Folder">
 			<Item Name="interface_configuration.vi" Type="VI" URL="../community/interfaces/interface_configuration.vi"/>
+			<Item Name="interface_version.vi" Type="VI" URL="../community/interfaces/interface_version.vi"/>
 		</Item>
 		<Item Name="configuration.vi" Type="VI" URL="../community/configuration.vi"/>
+		<Item Name="version.vi" Type="VI" URL="../community/version.vi"/>
 	</Item>
 	<Item Name="private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -45,7 +49,12 @@
 			<Item Name="hmi_browse_post_install_file.vi" Type="VI" URL="../private/_subvis/hmi_browse_post_install_file.vi"/>
 			<Item Name="hmi_browse_folder.vi" Type="VI" URL="../private/_subvis/hmi_browse_folder.vi"/>
 			<Item Name="hmi_browse_update_version.vi" Type="VI" URL="../private/_subvis/hmi_browse_update_version.vi"/>
+			<Item Name="get_version_path.vi" Type="VI" URL="../private/_subvis/get_version_path.vi"/>
+			<Item Name="get_config_path.vi" Type="VI" URL="../private/_subvis/get_config_path.vi"/>
+			<Item Name="default_configuration.vi" Type="VI" URL="../private/_subvis/default_configuration.vi"/>
+			<Item Name="configuration_relative.vi" Type="VI" URL="../private/_subvis/configuration_relative.vi"/>
 		</Item>
+		<Item Name="_controls" Type="Folder"/>
 	</Item>
 	<Item Name="public" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
@@ -55,6 +64,7 @@
 			<Item Name="post_action_installer.ctl" Type="VI" URL="../public/_controls/post_action_installer.ctl"/>
 			<Item Name="post_action_lvlib.ctl" Type="VI" URL="../public/_controls/post_action_lvlib.ctl"/>
 			<Item Name="post_action_zip.ctl" Type="VI" URL="../public/_controls/post_action_zip.ctl"/>
+			<Item Name="version.ctl" Type="VI" URL="../public/_controls/version.ctl"/>
 		</Item>
 		<Item Name="_subvis" Type="Folder">
 			<Item Name="convert_version.vi" Type="VI" URL="../public/_subvis/convert_version.vi"/>
@@ -62,8 +72,5 @@
 		</Item>
 		<Item Name="create_project_vipc.vi" Type="VI" URL="../public/create_project_vipc.vi"/>
 		<Item Name="cube_drop.vi" Type="VI" URL="../public/cube_drop.vi"/>
-	</Item>
-	<Item Name="move_zip_path.vi" Type="VI" URL="../community/_subvis/move_zip_path.vi">
-		<Property Name="NI.LibItem.Scope" Type="Int">4</Property>
 	</Item>
 </Library>

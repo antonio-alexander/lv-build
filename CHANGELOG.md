@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.2.0 - 2021-03-03
+
+- Decided to rev the version due to changes for...versioning
+- Created a handful of new items for handling versioning, found that handling it through the configuration wouldn't transfer well to changing drivers and it'd make more sense to separate the version out and make it "extendable" (I think it's over-engineered, and that may be what's cool about it).
+- Modified the configuration for lv-build-default to have a default configuration that populates the paths
+- Modified configuration writes to make the configuration relative and for reads to convert those relative paths to absolute paths. Alternatively, if a path is given that isn't relative to the project path, it's absolute path is maintained
+
 ## [1.1.0] - 2021-02-23
 
 - Fixed bug where version would use the commit hash value as a delimiter when trying to split the version via dots.
