@@ -13,10 +13,7 @@
 	</Item>
 	<Item Name="community" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">4</Property>
-		<Item Name="_controls" Type="Folder">
-			<Item Name="command_configuration.ctl" Type="VI" URL="../community/_controls/command_configuration.ctl"/>
-			<Item Name="version_command.ctl" Type="VI" URL="../community/_controls/version_command.ctl"/>
-		</Item>
+		<Item Name="_controls" Type="Folder"/>
 		<Item Name="_subvis" Type="Folder">
 			<Item Name="application_compress.vi" Type="VI" URL="../community/_subvis/application_compress.vi"/>
 			<Item Name="application_compress_path.vi" Type="VI" URL="../community/_subvis/application_compress_path.vi"/>
@@ -38,8 +35,6 @@
 			<Item Name="interface_configuration.vi" Type="VI" URL="../community/interfaces/interface_configuration.vi"/>
 			<Item Name="interface_version.vi" Type="VI" URL="../community/interfaces/interface_version.vi"/>
 		</Item>
-		<Item Name="configuration.vi" Type="VI" URL="../community/configuration.vi"/>
-		<Item Name="version.vi" Type="VI" URL="../community/version.vi"/>
 	</Item>
 	<Item Name="private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -51,26 +46,30 @@
 			<Item Name="hmi_browse_update_version.vi" Type="VI" URL="../private/_subvis/hmi_browse_update_version.vi"/>
 			<Item Name="get_version_path.vi" Type="VI" URL="../private/_subvis/get_version_path.vi"/>
 			<Item Name="get_config_path.vi" Type="VI" URL="../private/_subvis/get_config_path.vi"/>
-			<Item Name="default_configuration.vi" Type="VI" URL="../private/_subvis/default_configuration.vi"/>
-			<Item Name="configuration_relative.vi" Type="VI" URL="../private/_subvis/configuration_relative.vi"/>
 		</Item>
 		<Item Name="_controls" Type="Folder"/>
 	</Item>
 	<Item Name="public" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 		<Item Name="_controls" Type="Folder">
+			<Item Name="command_configuration.ctl" Type="VI" URL="../public/_controls/command_configuration.ctl"/>
 			<Item Name="configuration.ctl" Type="VI" URL="../public/_controls/configuration.ctl"/>
 			<Item Name="post_action_application.ctl" Type="VI" URL="../public/_controls/post_action_application.ctl"/>
 			<Item Name="post_action_installer.ctl" Type="VI" URL="../public/_controls/post_action_installer.ctl"/>
 			<Item Name="post_action_lvlib.ctl" Type="VI" URL="../public/_controls/post_action_lvlib.ctl"/>
 			<Item Name="post_action_zip.ctl" Type="VI" URL="../public/_controls/post_action_zip.ctl"/>
 			<Item Name="version.ctl" Type="VI" URL="../public/_controls/version.ctl"/>
+			<Item Name="version_command.ctl" Type="VI" URL="../public/_controls/version_command.ctl"/>
 		</Item>
 		<Item Name="_subvis" Type="Folder">
+			<Item Name="configuration_default.vi" Type="VI" URL="../public/_subvis/configuration_default.vi"/>
+			<Item Name="configuration_relative.vi" Type="VI" URL="../public/_subvis/configuration_relative.vi"/>
 			<Item Name="convert_version.vi" Type="VI" URL="../public/_subvis/convert_version.vi"/>
 			<Item Name="update_version.vi" Type="VI" URL="../public/_subvis/update_version.vi"/>
 		</Item>
 		<Item Name="create_project_vipc.vi" Type="VI" URL="../public/create_project_vipc.vi"/>
 		<Item Name="cube_drop.vi" Type="VI" URL="../public/cube_drop.vi"/>
+		<Item Name="file_configuration.vi" Type="VI" URL="../public/file_configuration.vi"/>
+		<Item Name="file_version.vi" Type="VI" URL="../public/file_version.vi"/>
 	</Item>
 </Library>
